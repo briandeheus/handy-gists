@@ -1,3 +1,10 @@
+"""
+Resize and crop functionality.
+
+- Allows for resizing an image by blowing up or scaling down images by their shortest dimension.
+- Allows for cropping an imagine to target dimensions. Make sure the image is larger than the specified crop.
+"""
+
 def resize_image(img: Image, target=800) -> Image:
     o_w, o_h = img.size
     ratio = target / min((o_h, o_w))
